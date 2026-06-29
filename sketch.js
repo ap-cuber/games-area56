@@ -325,7 +325,7 @@ function runGameLogic() {
       if (frameCount % 90 === 0) { 
         let alien = new Sprite(random(50, width - 50), -50); 
         alien.img = alienImg; 
-        alien.scale = 1.5; 
+        alien.scale = 1.1
         alien.vel.y = 2; 
         alien.rotationLock = true; 
         alien.collider = 'none'; 
@@ -499,7 +499,7 @@ function runGameLogic() {
     } 
   }
 
-  // === FINALLY FIXED LEVEL 5 BOSS BEHAVIOR: COSMIC FLARE ===
+  // === FIXED LEVEL 5 BOSS BEHAVIOR: COSMIC FLARE ===
   if (currentLevel === 5 && flareActive && flareHealth > 0) {
     changeMusic(trackBoss5);
     if (flareBoss.y >= 180 && flareBoss.vel.y !== 0) { 
